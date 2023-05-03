@@ -60,6 +60,7 @@
       <div class="row">
         <div class="col-lg-12 d-flex flex-column justify-content-center">
           <h1>What type of vehicle are you looking for?</h1>
+          <div class="d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
@@ -88,6 +89,7 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
+            </div>
         </div>
       </div>
     </div>
