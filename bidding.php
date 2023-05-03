@@ -54,18 +54,40 @@
     </div>
   </header><!-- End Header -->
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex">
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
+        <div class="col-lg-12 d-flex flex-column justify-content-center">
           <h1>What type of vehicle are you looking for?</h1>
-          <ul>
-            <li><i class="ri-check-line"></i> Truck</li>
-            <li><i class="ri-check-line"></i> SUV</li>
-            <li><i class="ri-check-line"></i> Van</li>
-            <li><i class="ri-check-line"></i> Car</li>
-          </ul>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Truck</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SUV</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Van</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Car</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
         </div>
       </div>
     </div>
