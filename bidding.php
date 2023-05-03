@@ -59,33 +59,33 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 d-flex flex-column justify-content-center">
-          <h1>What type of vehicle are you looking for?</h1>
-          <div class="d-flex justify-content-center">
+          <h1 class="fs-2 text-center">What type of vehicle are you looking for?</h1>
+          <div class="mt-5 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Truck</h5>
+                        <h5 class="card-title text-center">Truck</h5>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">SUV</h5>
+                        <h5 class="card-title text-center">SUV</h5>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Van</h5>
+                        <h5 class="card-title text-center">Van</h5>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Car</h5>
+                        <h5 class="card-title text-center">Car</h5>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
