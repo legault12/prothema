@@ -58,7 +58,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 d-flex flex-column justify-content-center">
+        <div class="col-lg-12 d-flex justify-content-center">
           <h1>What type of vehicle are you looking for?</h1>
           <ul>
             <li><i class="ri-check-line"></i> Truck</li>
@@ -66,10 +66,6 @@
             <li><i class="ri-check-line"></i> Van</li>
             <li><i class="ri-check-line"></i> Car</li>
           </ul>
-          <div class="mt-3">
-            <a href="bidding.php" class="btn-get-started scrollto">Start a Bid</a>
-            <a href="" class="btn-get-quote">Join Our Service</a>
-          </div>
         </div>
       </div>
     </div>
