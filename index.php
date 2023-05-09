@@ -1,3 +1,4 @@
+<?php include 'modules/universal/var-home.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,10 +38,9 @@
 </head>
 
 <body>
-
+  <?php include 'modules/homepage/hero.php'; ?>
   <?php include 'modules/universal/header.php'; ?>
   
-  <?php include 'modules/homepage/hero.php'; ?>
 
 
 
