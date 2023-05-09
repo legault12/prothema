@@ -1,3 +1,9 @@
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path .= "modules/universal/db_connection.php";
+  include_once($path);
+  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
