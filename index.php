@@ -1,4 +1,3 @@
-<?php include 'modules/universal/var-home.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
