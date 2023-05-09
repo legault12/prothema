@@ -1,4 +1,3 @@
-<?php include ; ?>
 <?php 
    $path = $_SERVER['DOCUMENT_ROOT'];
    $path .= "modules/variables/home.php";

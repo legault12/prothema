@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Prothema</title>
+  <title>Prothema - Login</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,38 +26,27 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/login.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Resi
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/resi-free-bootstrap-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
   <?php include 'modules/universal/header.php'; ?>
-  <?php include 'modules/homepage/hero.php'; ?>  
 
   <main id="main">
-    
-    <?php include 'modules/homepage/about.php'; ?>
-
-    <?php include 'modules/homepage/why-us.php'; ?>
-    
-    <?php include 'modules/homepage/faq.php'; ?>
-
-    <?php include 'modules/homepage/contact.php'; ?>
-
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="login_process.php" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Log in">
+      </form>
+    </div>
   </main>
 
-  <?php include 'modules/universal/footer.php'; ?> 
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <?php include 'modules/universal/footer.php'; ?>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
