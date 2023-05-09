@@ -1,4 +1,4 @@
-<?php include '/../variables/var-home.php'; ?>
+<?php include 'modules/variables/var-home.php'; ?>
 
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top ">
