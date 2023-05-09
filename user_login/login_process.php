@@ -1,4 +1,10 @@
 <?php
+  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path .= "modules/universal/db_connection.php";
+  include_once($path);
+  ?>
+
+<?php
 
 // This would be where you'd normally check the provided credentials against a database
 
