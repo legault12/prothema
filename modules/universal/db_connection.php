@@ -1,9 +1,9 @@
 <?php
 
-$host = 'localhost'; // example database host
-$dbname = 'prothemadb'; // example database name
-$username = 'myusername'; // example database username
-$password = 'mypassword'; // example database password
+$host = 'localhost';
+$dbname = 'prothemadb';
+$username = 'frontend';
+$password = '.Zfb_oMsA8EgvFZTYqr9';
 
 // create a new PDO connection
 try {
