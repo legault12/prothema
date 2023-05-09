@@ -1,4 +1,8 @@
-<?php include 'modules/variables/home.php'; ?>
+<?php 
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "modules/variables/home.php";
+   include_once($path);
+?>
 
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top ">
