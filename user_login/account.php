@@ -38,9 +38,10 @@
   ?>
 
   <main id="main">
-    <!-- User Account Content Goes Here -->
-    <h1>Welcome to your account</h1>
-    <!-- Add more account related content as needed -->
+    <div class="container">
+      <h1>Welcome to your account</h1>
+    </div>
+
   </main>
 
   <?php
