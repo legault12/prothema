@@ -35,13 +35,29 @@
   $path = $_SERVER['DOCUMENT_ROOT'];
   $path .= "modules/universal/header.php";
   include_once($path);
+  
+  // include the database connection file
+  include_once '../modules/universal/db_connection.php';
+
+  // Get the user's ID from the session
+  $userId = $_SESSION['user_id'];
+
+  // Prepare and execute the SQL statement
+  $stmt = $conn->prepare("SELECT * FROM users WHERE id = :id");
+  $stmt->bindParam(':id', $userId);
+  $stmt->execute();
+
+  // Get the user
+  $user = $stmt->fetch(PDO::FETCH_ASSOC);
   ?>
 
   <main id="main">
     <div class="container">
-      <h1>Welcome to your account</h1>
+      <h2>User Information</h2>
+      <p>Username: <?php echo $user['username']; ?></p>
+      <p>Email: <?php echo $user['email']; ?></p>
+      <!-- Add more fields as necessary -->
     </div>
-
   </main>
 
   <?php
@@ -61,8 +77,8 @@
   <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="/assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="/assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
 
 </body>
 
