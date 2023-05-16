@@ -34,6 +34,6 @@ if($stmt->rowCount() > 0) {
 
 // if the script hasn't exited by now, the login attempt was unsuccessful
 $_SESSION['error'] = "Invalid username or password";
-header("Location: ../login.php");
+// header("Location: ../login.php");
 exit;
 ?>
