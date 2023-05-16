@@ -49,29 +49,29 @@
                 <div class="card m-3">
                     <img src="/assets/img/truck.png" class="card-img-top p-4" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Truck</h5>
-                        <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
+                        <h5 class="card-title mb-4">Truck</h5>
+                        <input class="form-check-input mb-4" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
                 <div class="card m-3">
                     <img src="/assets/img/suv.png" class="card-img-top p-4" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">SUV</h5>
-                        <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
+                        <h5 class="card-title mb-4">SUV</h5>
+                        <input class="form-check-input mb-4" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
                 <div class="card m-3">
                     <img src="/assets/img/van.png" class="card-img-top p-4" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Van</h5>
-                        <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
+                        <h5 class="card-title mb-4">Van</h5>
+                        <input class="form-check-input mb-4" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
                 <div class="card m-3">
                     <img src="/assets/img/car.png" class="card-img-top p-4" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title mb-2">Car</h5>
-                        <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
+                        <h5 class="card-title mb-4">Car</h5>
+                        <input class="form-check-input mb-4" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
             </div>
