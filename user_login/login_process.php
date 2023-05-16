@@ -21,13 +21,13 @@ if($stmt->rowCount() > 0) {
         $_SESSION['user_id'] = $user['id'];
 
         // redirect to the account page
-        header("Location: /account.php");
+        header("Location: account.php");
         exit;
     }
 }
 
 // if the script hasn't exited by now, the login attempt was unsuccessful
 $_SESSION['error'] = "Invalid username or password";
-header("Location: /login.php");
+header("Location: ../login.php");
 exit;
 ?>
