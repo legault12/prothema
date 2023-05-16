@@ -39,11 +39,11 @@
     <?php include 'modules/universal/header.php'; ?>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex">
-  <form>
     <div class="container">
       <div class="row">
         <div class="col-lg-12 d-flex flex-column justify-content-center">
           <h1 class="fs-2 text-center">What type of vehicle are you looking for?</h1>
+          <form> 
           <div class="mt-5 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
@@ -74,10 +74,10 @@
                     </div>
                 </div>
             </div>
+        </form>
         </div>
       </div>
     </div>
-  </form>
   </section><!-- End Hero -->
 
 </body>
