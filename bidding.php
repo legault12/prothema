@@ -75,8 +75,8 @@
                     </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-center">
-                  <input type="submit" name="submit_page1" value="Next" class="btn btn-lg btn-primary px-4">
+              <div class="d-flex justify-content-center mt-5">
+                  <input type="submit" name="submit_page1" value="Next" class="btn btn-lg btn-primary px-5">
               </div>
         </form>
         </div>
