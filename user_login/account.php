@@ -28,16 +28,26 @@
 
   <!-- Template Main CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/login.css" rel="stylesheet">
 </head>
 
 <body>
   <?php
+  // Start session
+  session_start();
+  
   $path = $_SERVER['DOCUMENT_ROOT'];
-  $path .= "modules/universal/header.php";
+  $path .= "/modules/universal/header.php";
   include_once($path);
   
   // include the database connection file
   include_once '../modules/universal/db_connection.php';
+
+  // check if user_id is set in session
+  if (!isset($_SESSION['user_id'])) {
+      echo 'User ID not set in session';
+      exit;
+  }
 
   // Get the user's ID from the session
   $userId = $_SESSION['user_id'];
@@ -47,15 +57,21 @@
   $stmt->bindParam(':id', $userId);
   $stmt->execute();
 
-  // Get the user
-  $user = $stmt->fetch(PDO::FETCH_ASSOC);
+  // check if a user was found
+  if($stmt->rowCount() > 0) {
+      // Get the user
+      $user = $stmt->fetch(PDO::FETCH_ASSOC);
+  } else {
+      echo 'No user found with the given ID';
+      exit;
+  }
   ?>
 
   <main id="main">
-    <div class="container">
+    <div class="account-container">
       <h2>User Information</h2>
-      <p>Username: <?php echo $user['username']; ?></p>
-      <p>Email: <?php echo $user['email']; ?></p>
+      <p>Username: <?php echo htmlspecialchars($user['username']); ?></p>
+      <p>Email: <?php echo htmlspecialchars($user['email']); ?></p>
       <!-- Add more fields as necessary -->
     </div>
   </main>
