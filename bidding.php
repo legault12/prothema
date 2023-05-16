@@ -38,12 +38,12 @@
 <body>
     <?php include 'modules/universal/header.php'; ?>
   <!-- ======= Hero Section ======= -->
-  <form>
   <section id="hero" class="d-flex">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 d-flex flex-column justify-content-center">
           <h1 class="fs-2 text-center">What type of vehicle are you looking for?</h1>
+          <form> 
           <div class="mt-5 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
@@ -74,11 +74,11 @@
                     </div>
                 </div>
             </div>
+        </form>
         </div>
       </div>
     </div>
   </section><!-- End Hero -->
-</form>
 
 </body>
 </html>
