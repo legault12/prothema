@@ -3,6 +3,6 @@
     margin: 3px;
 }
 
-.card-body input[type="checkbox"] {
-    transform: scale(1.5);
+.form-check-input {
+    transform: scale(1.8);
   }
