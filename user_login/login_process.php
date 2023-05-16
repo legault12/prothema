@@ -14,6 +14,9 @@ $stmt->execute();
 if($stmt->rowCount() > 0) {
     // get the user
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // output the fetched data for debugging
+    var_dump($user);
     
     // verify the password
     if(password_verify($_POST['password'], $user['password'])) {
@@ -23,6 +26,9 @@ if($stmt->rowCount() > 0) {
         // redirect to the account page
         header("Location: account.php");
         exit;
+    } else {
+        // output the entered password for debugging
+        echo "Entered password: " . $_POST['password'];
     }
 }
 
