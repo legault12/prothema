@@ -74,6 +74,7 @@
                         <input class="form-check-input mb-4" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
+                <input type="submit" name="submit_page1" value="Next">
             </div>
         </form>
         </div>
