@@ -39,7 +39,7 @@
     <?php include 'modules/universal/header.php'; ?>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex">
-
+  <form>
     <div class="container">
       <div class="row">
         <div class="col-lg-12 d-flex flex-column justify-content-center">
@@ -49,35 +49,35 @@
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">Truck</h5>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">SUV</h5>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">Van</h5>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">Car</h5>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
             </div>
         </div>
       </div>
     </div>
-
+  </form>
   </section><!-- End Hero -->
 
 </body>
