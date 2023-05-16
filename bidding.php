@@ -46,31 +46,31 @@
           <h1 class="fs-2 text-center">What type of vehicle(s) are you looking for?</h1>
           <form> 
           <div class="mt-5 d-flex justify-content-center">
-                <div class="card m-4">
+                <div class="card m-3">
                     <img src="/assets/img/truck.png" class="card-img-top p-4" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Truck</h5>
+                        <h5 class="card-title mb-2">Truck</h5>
                         <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
-                <div class="card m-4">
-                    <img src="/assets/img/suv.png" class="card-img-top p-4" alt="...">
+                <div class="card m-3">
+                    <img src="/assets/img/suv.png" class="card-img-top p-4 px-5" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title">SUV</h5>
+                        <h5 class="card-title mb-2">SUV</h5>
                         <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
-                <div class="card m-4">
+                <div class="card m-3">
                     <img src="/assets/img/van.png" class="card-img-top p-4" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Van</h5>
+                        <h5 class="card-title mb-2">Van</h5>
                         <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
-                <div class="card m-4">
+                <div class="card m-3">
                     <img src="/assets/img/car.png" class="card-img-top p-4" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Car</h5>
+                        <h5 class="card-title mb-2">Car</h5>
                         <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
                     </div>
                 </div>
