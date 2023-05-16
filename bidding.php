@@ -38,8 +38,8 @@
 <body>
     <?php include 'modules/universal/header.php'; ?>
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex">
   <form>
+  <section id="hero" class="d-flex">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 d-flex flex-column justify-content-center">
@@ -77,8 +77,8 @@
         </div>
       </div>
     </div>
-  </form>
   </section><!-- End Hero -->
+</form>
 
 </body>
 </html>
