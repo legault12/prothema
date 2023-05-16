@@ -2,3 +2,7 @@
 {
     margin: 3px;
 }
+
+.card-body input[type="checkbox"] {
+    transform: scale(1.5);
+  }
