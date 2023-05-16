@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="card m-3">
-                    <img src="/assets/img/suv.png" class="card-img-top p-4 px-5" alt="...">
+                    <img src="/assets/img/suv.png" class="card-img-top p-4" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-2">SUV</h5>
                         <input class="form-check-input" type="checkbox" value="" id="phone-checkbox">
