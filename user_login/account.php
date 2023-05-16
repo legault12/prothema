@@ -53,7 +53,7 @@
   $userId = $_SESSION['user_id'];
 
   // Prepare and execute the SQL statement
-  $stmt = $conn->prepare("SELECT * FROM customers WHERE id = :id");
+  $stmt = $conn->prepare("SELECT * FROM users WHERE id = :id");
   $stmt->bindParam(':id', $userId);
   $stmt->execute();
 
@@ -68,26 +68,12 @@
   ?>
 
   <main id="main">
-    <div class="container">
+    <div class="account-container">
       <h2>User Information</h2>
+      <p>Username: <?php echo htmlspecialchars($user['username']); ?></p>
+      <p>Email: <?php echo htmlspecialchars($user['email']); ?></p>
       <p>First Name: <?php echo htmlspecialchars($user['first_name']); ?></p>
       <p>Last Name: <?php echo htmlspecialchars($user['last_name']); ?></p>
-      <p>Email: <?php echo htmlspecialchars($user['email']); ?></p>
-      <p>Phone: <?php echo htmlspecialchars($user['phone']); ?></p>
-      <p>Address Line 1: <?php echo htmlspecialchars($user['address_line1']); ?></p>
-      <p>Address Line 2: <?php echo htmlspecialchars($user['address_line2']); ?></p>
-      <p>City: <?php echo htmlspecialchars($user['city']); ?></p>
-      <p>State: <?php echo htmlspecialchars($user['state']); ?></p>
-      <p>ZIP: <?php echo htmlspecialchars($user['zip']); ?></p>
-      <p>Country: <?php echo htmlspecialchars($user['country']); ?></p>
-      <p>Date of Birth: <?php echo htmlspecialchars($user['date_of_birth']); ?></p>
-      <p>Gender: <?php echo htmlspecialchars($user['gender']); ?></p>
-      <p>Membership Status: <?php echo htmlspecialchars($user['membership_status']); ?></p>
-      <p>Date Joined: <?php echo htmlspecialchars($user['date_joined']); ?></p>
-      <p>Last Activity Date: <?php echo htmlspecialchars($user['last_activity_date']); ?></p>
-      <p>Purchase History: <?php echo htmlspecialchars($user['purchase_history']); ?></p>
-      <p>Preferences: <?php echo htmlspecialchars($user['preferences']); ?></p>
-      <p>Notes: <?php echo htmlspecialchars($user['notes']); ?></p>
     </div>
   </main>
 
