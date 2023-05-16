@@ -1,9 +1,10 @@
 <?php
+session_start();
+
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "modules/universal/db_connection.php";
+$path .= "/modules/universal/db_connection.php";
 include_once($path);
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,46 +41,18 @@ include_once($path);
 </head>
 
 <body>
-    <?php
-    // Replace the database credentials with your own
-    $host = "localhost";
-    $username = "frontend";
-    $password = ".Zfb_oMsA8EgvFZTYqr9";
-    $database = "prothemadb";
-
-    // Create a new database connection
-    $conn = mysqli_connect($host, $username, $password, $database);
-
-    // Check if the connection was successful
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-
-    // Prepare a SQL query to select all rows from the users table
-    $sql = "SELECT * FROM users";
-
-    // Execute the query and get the result set
-    $result = mysqli_query($conn, $sql);
-
-    // Check if any rows were returned
-    if (mysqli_num_rows($result) > 0) {
-        // Loop through each row and display the values
-        while ($row = mysqli_fetch_assoc($result)) {
-            echo "ID: " . $row["id"] . " - Name: " . $row["name"] . " - Email: " . $row["email"] . "<br>";
-        }
-    } else {
-        echo "No results found.";
-    }
-
-    // Close the database connection
-    mysqli_close($conn);
-    ?>
 
     <?php include 'modules/universal/header.php'; ?>
 
     <main id="main">
         <div class="login-container">
             <h2>Login</h2>
+            <?php
+            if(isset($_SESSION['error'])) {
+                echo "<p class='error'>{$_SESSION['error']}</p>";
+                unset($_SESSION['error']);
+            }
+            ?>
             <form action="user_login/login_process.php" method="post">
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="password" name="password" placeholder="Password" required>

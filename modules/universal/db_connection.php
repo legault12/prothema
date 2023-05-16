@@ -1,18 +1,17 @@
 <?php
+// define database connection parameters
+$host = "localhost";
+$db_username = "frontend";
+$db_password = ".Zfb_oMsA8EgvFZTYqr9";
+$db_name = "prothemadb";
 
-$host = 'localhost';
-$dbname = 'prothemadb';
-$username = 'frontend';
-$password = '.Zfb_oMsA8EgvFZTYqr9';
-
-// create a new PDO connection
 try {
-    $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    // create a new PDO instance
+    $conn = new PDO("mysql:host=$host;dbname=$db_name", $db_username, $db_password);
     // set the PDO error mode to exception
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully"; 
 } catch(PDOException $e) {
-    // handle the exception here (e.g. log the error message)
-    echo 'Connection failed: ' . $e->getMessage();
+    echo "Connection failed: " . $e->getMessage();
 }
-
 ?>
